@@ -6,16 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 
-import java.time.LocalDateTime;
-
 @SpringBootTest
 class Sbb0524ApplicationTests {
-
-	@Autowired
-	private QuestionService questionService;
-
-	@Test
-	void contextLoads() {
-
-	}
 }
