@@ -12,5 +12,3 @@ spring:
         show_sql: false
         format_sql: false
         use_sql_comments: false
-server:
-  port: '8000'
