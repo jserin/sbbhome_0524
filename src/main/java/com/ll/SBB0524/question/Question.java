@@ -34,6 +34,6 @@ public class Question {
 
     private LocalDateTime modifyDate;
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     Set<SiteUser> voter;
 }

@@ -29,6 +29,6 @@ public class Answer {
     private SiteUser author;
     private LocalDateTime modifyDate;
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     Set<SiteUser> voter;
 }
