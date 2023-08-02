@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko" layout:decorate="~{layout}">
+<html lang="ko" layout:decorate="~{layout}" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:layout="http://www.w3.org/1999/xhtml">
 <div layout:fragment="content" class="container my-3">
     <div class="row my-3">
         <div class="col-6">
@@ -24,9 +24,9 @@
         <tbody>
         <tr class="text-center" th:each="question, loop : ${paging}">
             <td th:text="${paging.getTotalElements - (paging.number * paging.size) - loop.index}"></td>
-            <td>
+            <td class="text-start">
                 <a th:href="@{|/question/detail/${question.id}|}" th:text="${question.subject}"></a>
-                <span class="text-danger small ms-2"
+                <span class="text-secondary small ms-2"
                       th:if="${#lists.size(question.answerList) > 0}"
                       th:text="${#lists.size(question.answerList)}">
                     </span>
