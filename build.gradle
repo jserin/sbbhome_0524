@@ -23,23 +23,18 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
-	runtimeOnly 'com.h2database:h2'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	//jpa 라이브러리 설치
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'
-	// thymeleaf 설치
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
-	//화면에서 전달받은 입력 값을 검증하기 위한 라이브러리
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6:3.1.1.RELEASE'
-	// 시큐리티 관련 라이브러리
 	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
-
 	implementation 'org.commonmark:commonmark:0.21.0'
+	implementation 'org.springframework.boot:spring-boot-starter-mail'
+	testImplementation 'org.springframework.security:spring-security-test'
 }
 
 test {
